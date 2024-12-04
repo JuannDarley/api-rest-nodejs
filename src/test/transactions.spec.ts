@@ -78,7 +78,7 @@ describe('Transactions routes', () => {
 			.set('Cookie', cookies)
 			.expect(200)
 
-		expect(getTransactionsResponse.body.transaction).toEqual(
+		expect(getTransactionsResponse.body.transactions).toEqual(
 			expect.objectContaining({
 				title: 'New transactions',
 				amount: 5000,
